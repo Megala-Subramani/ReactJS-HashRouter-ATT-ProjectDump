@@ -1,0 +1,64 @@
+{
+	"name": "stui",
+	"version": "0.0.1",
+	"type": "module",
+	"homepage": "SoftTestWeb",
+	"exports": {
+		".": "./dist/index.html",
+		"./package.json": "./package.json"
+	},
+	"main": "./dist/index.html",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@mantine/core": "^6.0.20",
+		"@mantine/dates": "^6.0.20",
+		"@mantine/form": "^6.0.20",
+		"@mantine/hooks": "^6.0.20",
+		"@mantine/modals": "^6.0.20",
+		"@mantine/notifications": "^6.0.20",
+		"@tabler/icons-react": "^2.34.0",
+		"@tanstack/react-query": "^4.35.3",
+		"@tanstack/react-query-devtools": "^4.35.3",
+		"@types/d3": "^7.4.3",
+		"@types/history": "^4.7.11",
+		"axios": "^1.5.0",
+		"chart.js": "^4.4.0",
+		"chartjs-chart-geo": "^4.2.7",
+		"d3": "^7.8.5",
+		"datamaps": "^0.5.9",
+		"dayjs": "^1.11.9",
+		"react": "^18.2.0",
+		"react-chartjs-2": "^5.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.16.0",
+		"recharts": "^2.8.0",
+		"topojson-client": "^3.1.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.21",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "5.59.6",
+		"@typescript-eslint/parser": "5.59.6",
+		"@vitejs/plugin-react": "^4.0.4",
+		"eslint": "8.40.0",
+		"eslint-config-prettier": "8.8.0",
+		"eslint-plugin-jest": "27.2.1",
+		"eslint-plugin-prettier": "4.2.1",
+		"eslint-plugin-react": "7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.3",
+		"prettier": "2.8.8",
+		"typescript": "5.0.4",
+		"vite": "^4.4.9"
+	}
+}
